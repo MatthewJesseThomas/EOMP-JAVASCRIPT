@@ -1,0 +1,206 @@
+/* Define custom variables */
+:root {
+    --primaryColor: darkcyan;
+    --secondaryColor: rgb(40, 67, 67);
+    --alternativeColor: rgb(119, 153, 214);
+    --reddishColor: rgb(102, 11, 11);
+    --whiteColor:white;
+    /* none | h-offset (X) v-offset (Y) blur spread color |inset|initial|inherit*/
+    --mainBoxShadow: .3vw .3vw 1vw rgba(0, 0, 87, 11);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Index Styling */
+/* Body Styles */
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden !important;
+    background-image: linear-gradient( #000428, #004e92, #bdc3c7, #2c3e50);
+}
+/* End_Of-Body Styles */
+/* Header Styles */
+.icon {
+    border-radius: 12px;
+}
+.logo {
+    height: 8rem;
+    scale: 1.055;
+    border-radius: 5px;
+}
+.logo:hover {
+    scale: 1.1;
+}
+.nav-link:hover {
+    color: darkcyan !important;
+    scale: 1.05;
+}
+.company-name {
+    margin: auto;
+    margin-left: 14rem;
+    font-size: 5rem;
+    font-style: italic;
+    text-shadow: var(--mainBoxShadow);
+}
+.navbar {
+    box-shadow: var(--mainBoxShadow);
+}
+/* End-Of_Header-Styling */
+/* ====================================================================== */
+/* Main_Section_Content */
+.about {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.8);
+}
+.abouts {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.8);
+}
+.paragraph {
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 2rem;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+#Home {
+    padding-top: 8rem;
+}
+.card{
+    border: 12px solid black;
+    border-radius: 4px;
+    box-shadow: var(--mainBoxShadow);
+}
+.card-body {
+    border-radius: 12px;
+}
+.btn {
+    box-shadow: var(--mainBoxShadow);
+}
+.btn:hover {
+    scale: 1.1;
+}
+.checkout-shit {
+    overflow-y: hidden;
+    margin-top: 5rem;
+}
+.table {
+    border: 10px solid var(--alternativeColor);
+}
+.h1-checkout {
+    margin-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    text-shadow: var(--mainBoxShadow);
+}
+/* End-Of_Main_Section_Content */
+/* ====================================================================== */
+/* Main_Section-Contact */
+#contact {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    box-shadow: var(--mainBoxShadow);
+}
+.Contact {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border: 12px solid var(--alternativeColor);
+    border-radius: 4px;
+}
+.contact-row {
+    margin: auto;
+    
+}
+.form-control {
+    width: 100% !important;
+    margin: auto;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.form-select {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+/* End-Of_Main_Section-Contact */
+/* ====================================================================== */
+/* Footer-Styling */
+footer {
+    margin-top: 14.75rem;
+    overflow-x: hidden;
+}
+/* End-Of_Footer-Styling */
+/* ====================================================================== */
+/* Index_Styling Ends */
+
+@media only screen and (max-width: 1000px) {
+    .Contact {
+        width: 70vw !important;     
+        margin: auto;   
+    }
+    .logo {
+        width: 8rem;
+        height: 8rem;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .Contact {
+        width: 85vw !important;     
+        margin: auto;   
+    }
+    .logo {
+        width: 4rem;
+        height: 4rem;
+        margin: auto;
+    }
+    .navbar {
+        width: 100vw !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Contact {
+        width: 95vw !important;     
+        margin: auto;   
+    }
+    .logo {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: auto;
+    }
+    .navbar,footer {
+        width: 100vw !important;
+        margin: auto;
+    } 
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar {
+        width: 100vw !important;
+        margin: auto;
+    } 
+    footer{
+        width: 100vw !important;
+        margin-left: auto;
+    }
+    #contact {
+        width: 100vw !important;
+        /* margin: auto; */
+    }
+}
