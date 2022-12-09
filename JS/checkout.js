@@ -14,19 +14,19 @@ function displayAlert(message, className) {
 }
 //Data-logging removal //
 function clearData (){
-    document.querySelector("#ItemsNo").value = "";
-    document.querySelector("#Items").value = "";
+    document.querySelector("#Itemno").value = "";
+    document.querySelector("#Item").value = "";
     document.querySelector("#RefNo").value = "";
     document.querySelector("#Price").value = "";
     document.querySelector("#QTY").value = "";
 }
 // Adding Customer-Data //
-document.querySelector("#checkout-list").addEventListener("#Submit", (e) => {
+document.querySelector(".checkout-list").addEventListener("#Submit", (e) => {
     e.preventDefault();
     
 // Retrieving Info //
-    const ItemNo = document.querySelector("#ItemsNo").value;
-    const Item = document.querySelector("#Items").value;
+    const ItemNo = document.querySelector("#Itemno").value;
+    const Item = document.querySelector("#Item").value;
     const RefNo = document.querySelector("#RefNo").value;
     const Price = document.querySelector("#Price").value;
     const Qty = document.querySelector("#QTY").value;
@@ -63,12 +63,12 @@ if (ItemNo == "" || Item == "" || RefNo == "" || Price == "" || Qty == ""){
 }
 });
 // Editing Information //
-document.querySelector("#checkout-list").addEventListener("click", (e) =>{
+document.querySelector(".checkout-list").addEventListener("click", (e) =>{
     target = e.target;
     if(target.classList.contains("edit")){
         chosen = target.parentElement.parentElement;
-        document.querySelector("#ItemsNo").value = chosen.children[0].textContent;
-        document.querySelector("#Items").value = chosen.children[1].textContent;
+        document.querySelector("#Itemnoo").value = chosen.children[0].textContent;
+        document.querySelector("#Item").value = chosen.children[1].textContent;
         document.querySelector("#RefNo").value = chosen.children[2].textContent;
         document.querySelector("#Price").value = chosen.children[3].textContent;
         document.querySelector("#QTY").value = chosen.children[4].textContent;
@@ -76,10 +76,12 @@ document.querySelector("#checkout-list").addEventListener("click", (e) =>{
 });
 
 // Deletion Of Data //
-document.querySelector("#checkout-list").addEventListener("click", (e) =>{
+document.querySelector(".checkout-list").addEventListener("click", (e) =>{
     target = e.target;
     if(target.classList.contains("delete")){
         target.parentElement.parentElement.remove();
         displayAlert("Customer Checkout Deleted", "danger");
     }
 });
+//  Update Price Total //
+
