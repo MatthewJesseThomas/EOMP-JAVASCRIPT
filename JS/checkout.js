@@ -67,7 +67,7 @@ document.querySelector(".checkout-list").addEventListener("click", (e) =>{
     target = e.target;
     if(target.classList.contains("edit")){
         chosen = target.parentElement.parentElement;
-        document.querySelector("#Itemnoo").value = chosen.children[0].textContent;
+        document.querySelector("#Itemno").value = chosen.children[0].textContent;
         document.querySelector("#Item").value = chosen.children[1].textContent;
         document.querySelector("#RefNo").value = chosen.children[2].textContent;
         document.querySelector("#Price").value = chosen.children[3].textContent;
