@@ -12,3 +12,4 @@ The filter & sort should be added.
 Price Calculation and Quantity * Price = Total must be done.
 =================================================
 Might need some style TLC.
+=================================================
