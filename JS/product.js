@@ -64,17 +64,19 @@ localStorage.setItem('products', JSON.stringify(products));
 // Retrieve LocalStorage //
 console.log(JSON.parse(localStorage.getItem('products'))
 );
+localStorage.getItem('products');
 // Retrieve an write Local Storage
-// function retrieveRecords(){ //retrieves items in the localStorage
-//     console.log("retrieve records");
+// function retrieve(){ //retrieves items in the localStorage
+//     console.log("retrieve");
 //     const key = document.getElementById('retrieveKey').value;
-//     let records = window.localStorage.getItem(key);
-//     const paragraph = document.createElement("p");
+//     let records = window.localStorage.getItem(products);
+//     const div = document.createElement("div");
 //     const infor = document.createTextNode(records);
-//     paragraph.appendChild(infor);
-//     var element = document.getElementById("retrieve");
-//     element.appendChild(paragraph);
-// }
+//     div.appendChild(infor);
+//     let element = document.getElementById("ayo");
+//     element.appendChild(div);
+// };
+// retrieve();
 // `   <div class="text-dark text-shadow-dark rounded-3 py-5 bible">
 //         <div class="row d-flex justify-content-around">
 //             <div class="card" style="width: 18rem;">
@@ -180,25 +182,25 @@ console.log(JSON.parse(localStorage.getItem('products'))
 // Store
 // localStorage.setItem("product", "products");
 // Local Storage //
-document.getElementById('view-product').addEventListener("click", function(){
-    window.localStorage.setItem('products', 'product');
-});
+// document.getElementById('view-product').addEventListener("click", function(){
+//     window.localStorage.setItem('products', 'product');
+// });
 
-document.getElementById('view-product').addEventListener("click", function(){
+// document.getElementById('view-product').addEventListener("click", function(){
 
-});
+// });
 
-document.getElementById('retrieve-single-item').addEventListener("click", function(){
+// document.getElementById('retrieve-single-item').addEventListener("click", function(){
 
-});
+// });
 
-document.getElementById('remove-single-item').addEventListener("click", function(){
+// document.getElementById('remove-single-item').addEventListener("click", function(){
 
-});
+// });
 
-document.getElementById('remove-all-items').addEventListener("click", function(){
+// document.getElementById('remove-all-items').addEventListener("click", function(){
 
-});
+// });
 // Update Function //
 // function updatePage(){
 //     const values = []
