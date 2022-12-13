@@ -22,7 +22,21 @@ html {
 }
 body {
     overflow-x: hidden !important;
-    background-image: linear-gradient( #000428, #004e92, #bdc3c7, #2c3e50);
+    max-height: 100vh;
+    max-width: 100%;
+    /* background-image: linear-gradient( #000428, #004e92, #bdc3c7, #2c3e50); */
+}
+.bgc {
+    background-image: linear-gradient( #004e92, #bdc3c7, #2c3e50); 
+}
+.bgc-2 {
+    background-image: linear-gradient( #000428, #004e92, #bdc3c7); 
+}
+.bgc-3 {
+    background-image: linear-gradient( #bdc3c7, #000428, #004e92); 
+}
+.bgc-4 {
+    background-image: linear-gradient( #2c3e50, #000428, #bdc3c7); 
 }
 /* End_Of-Body Styles */
 /* Header Styles */
@@ -64,7 +78,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 .abouts {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bolder;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -73,11 +87,10 @@ body {
     padding-top: 2rem;
     text-align: center;
     justify-content: center;
-    text-decoration: underline;
     font-size: 3rem;
 }
 #Home {
-    padding-top: 8rem;
+    padding-top: 1rem;
 }
 .card{
     border: 12px solid black;
@@ -107,6 +120,10 @@ body {
     color: rgba(255, 255, 255, 0.8);
     font-style: italic;
     text-shadow: var(--mainBoxShadow);
+}
+#img-resize {
+    height: 25rem;
+    width: 15rem;
 }
 /* End-Of_Main_Section_Content */
 /* ====================================================================== */
@@ -144,13 +161,14 @@ body {
 /* ====================================================================== */
 /* Footer-Styling */
 footer {
-    margin-top: 14.75rem;
+    margin-top: 14.85rem;
     overflow-x: hidden;
 }
 /* End-Of_Footer-Styling */
 /* ====================================================================== */
 /* Index_Styling Ends */
-
+/* ====================================================================== */
+/* Media Queries-Responsiveness */
 @media only screen and (max-width: 1000px) {
     .Contact {
         width: 70vw !important;     
@@ -162,7 +180,7 @@ footer {
         margin: auto;
     }
 }
-
+/* ==================================================== */
 @media only screen and (max-width: 720px) {
     .Contact {
         width: 85vw !important;     
@@ -177,7 +195,7 @@ footer {
         width: 100vw !important;
     }
 }
-
+/* ==================================================== */
 @media only screen and (max-width: 500px) {
     .Contact {
         width: 95vw !important;     
@@ -193,7 +211,7 @@ footer {
         margin: auto;
     } 
 }
-
+/* ==================================================== */
 @media only screen and (max-width: 300px) {
     .navbar {
         width: 100vw !important;
@@ -208,3 +226,4 @@ footer {
         /* margin: auto; */
     }
 }
+/* ==================================================== */
