@@ -1,3 +1,5 @@
+// JavaScript //
+  ===========
 // function retrieve(){ //retrieves items in the localStorage
 //     console.log("retrieve");
 //     const key = document.getElementById('retrieveKey').value;
@@ -11,4 +13,4 @@
 // retrieve();
 //===================================================================
 // Html //
-============
+  ======
