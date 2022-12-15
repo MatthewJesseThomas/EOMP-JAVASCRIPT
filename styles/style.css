@@ -64,10 +64,11 @@ body {
 }
 .company-name {
     margin: auto;
-    margin-left: 10rem;
+    margin-left: 9.5rem;
     font-size: 5rem;
     font-style: italic;
-    text-shadow: var(--mainBoxShadow);
+    color: rgba(300, 300, 300, 0.78);
+    text-shadow: .5vw .4vw 1vw rgba(0, 4, 68, 9);
 }
 .navbar {
     box-shadow: var(--mainBoxShadow);
