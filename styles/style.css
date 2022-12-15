@@ -273,9 +273,9 @@ footer {
         width: 100vw !important;
     }
     .company-name {
-        margin: 3rem;
+        margin: 2rem;
         margin-left: 9rem;
-        font-size: 1.6rem;
+        font-size: 1.9rem;
     }
     footer {
         width: 100vw !important;
@@ -283,11 +283,26 @@ footer {
     }
 }
 /* ==================================================== */
+@media only screen and (max-width: 400px) {
+    .navbar {
+        width: 100vw !important;
+    } 
+    .company-name {
+        margin: 1rem;
+        margin-left: 5.5rem;
+        font-size: 1.8rem;
+    }
+}
+/* ==================================================== */
 @media only screen and (max-width: 300px) {
     .navbar {
         width: 100vw !important;
-        margin: auto;
     } 
+    .company-name {
+        margin: 1rem;
+        margin-left: 4.5rem;
+        font-size: 1.4rem;
+    }
     footer{
         width: 100vw !important;
         margin-left: auto;
