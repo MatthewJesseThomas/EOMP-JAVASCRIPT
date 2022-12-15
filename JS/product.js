@@ -62,8 +62,9 @@ for(let product in products) {
 // Local Storage set //
 localStorage.setItem('products', JSON.stringify(products));
 // Retrieve LocalStorage //
-console.log(JSON.parse(localStorage.getItem('products'))
-);
+localStorage.getItem('products', JSON.parse(products));
+// console.log(JSON.parse(localStorage.getItem('products'))
+// );
 localStorage.getItem('products');
 // Retrieve an write Local Storage
 const ItemNo = document.querySelector("#Itemno").value;

@@ -64,7 +64,7 @@ body {
 }
 .company-name {
     margin: auto;
-    margin-left: 14rem;
+    margin-left: 10rem;
     font-size: 5rem;
     font-style: italic;
     text-shadow: var(--mainBoxShadow);
@@ -189,13 +189,41 @@ footer {
 /* Media Queries-Responsiveness */
 @media only screen and (max-width: 1000px) {
     .Contact {
-        width: 70vw !important;     
+        width: 90vw !important;     
         margin: auto;   
     }
     .logo {
         width: 8rem;
         height: 8rem;
         margin: auto;
+    }
+    .company-name {
+        margin: auto;
+        margin-left: 8rem;
+        font-size: 3.5rem;
+    }
+}
+/* ==================================================== */
+@media only screen and (max-width: 900px) {
+    .navbar {
+        width: 100vw !important;
+    }
+    .company-name {
+        margin: auto;
+        margin-left: 7.5rem;
+        font-size: 3.5rem;
+    }
+}
+/* ==================================================== */
+/* ==================================================== */
+@media only screen and (max-width: 800px) {
+    .navbar {
+        width: 100vw !important;
+    }
+    .company-name {
+        margin: auto;
+        margin-left: 5rem;
+        font-size: 3.5rem;
     }
 }
 /* ==================================================== */
@@ -209,8 +237,25 @@ footer {
         height: 4rem;
         margin: auto;
     }
+    .company-name {
+        margin: 3rem;
+        margin-left: 12rem;
+        font-size: 2.75rem;
+    }
+    .navbar {
+        margin: auto;
+        width: 100vw !important;
+    }
+}
+/* ==================================================== */
+@media only screen and (max-width: 600px) {
     .navbar {
         width: 100vw !important;
+    }
+    .company-name {
+        margin: auto;
+        margin-left: 10rem;
+        font-size: 2.5rem;
     }
 }
 /* ==================================================== */
@@ -224,10 +269,18 @@ footer {
         height: 4.5rem;
         margin: auto;
     }
-    .navbar,footer {
+    .navbar {
+        width: 100vw !important;
+    }
+    .company-name {
+        margin: 3rem;
+        margin-left: 9rem;
+        font-size: 1.6rem;
+    }
+    footer {
         width: 100vw !important;
         margin: auto;
-    } 
+    }
 }
 /* ==================================================== */
 @media only screen and (max-width: 300px) {
