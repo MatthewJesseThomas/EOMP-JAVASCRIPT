@@ -154,13 +154,14 @@ body {
     box-shadow: var(--mainBoxShadow);
 }
 .Contact {
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
     border: 12px solid var(--alternativeColor);
     border-radius: 4px;
 }
 .contact-row {
     margin: auto;
+    width: 30rem !important;
     
 }
 .form-control {
@@ -174,6 +175,11 @@ body {
     width: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+.btn-outline-info {
+    padding: 1rem 2.1rem;
+    margin-left: 9.5rem;
+    border-radius: 1rem;
 }
 /* End-Of_Main_Section-Contact */
 /* ====================================================================== */
