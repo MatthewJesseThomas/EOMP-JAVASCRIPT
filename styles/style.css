@@ -29,19 +29,7 @@ body {
     animation: gradient 20s ease infinite;
     /* background-image: linear-gradient( #000428, #004e92, #bdc3c7, #2c3e50); */
 }
-/* CSSResult Skip Results Iframe
-EDIT ON
-html, body {
-  width: 100%;
-  height:100%;
-}
 
-body {
-    
-}
-
-
-} */
 .bgc-img {
     background-image:url(https://i.postimg.cc/W1wbShdn/1920-x-1080-gaming-cyberpunk-city-a2ho6vmdryz2x419.jpg);
     background-position:center ;

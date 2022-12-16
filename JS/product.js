@@ -195,27 +195,33 @@ document.getElementById('view-product').addEventListener("click", function(){
 // Store
 // localStorage.setItem("product", "products");
 // Event Handling//
-document.getElementById('view-product').addEventListener("click", function(){
+// Btn //
+let buttons = document.getElementById('btn-checkout');
+
+buttons.document.getElementById('view-product').addEventListener("click", function(){
     window.JSON.parse(localStorage.getItem('products', 'product'));
 });
 
-document.getElementById('view-product').addEventListener("click", function(){
+buttons.document.getElementById('view-product').addEventListener("click", function(){
 
 });
 
-document.getElementById('retrieve-single-item').addEventListener("click", function(){
+buttons.document.getElementById('retrieve-single-item').addEventListener("click", function(){
 
 });
 
-document.getElementById('remove-single-item').addEventListener("click", function(){
+buttons.document.getElementById('remove-single-item').addEventListener("click", function(){
 
 });
 
-document.getElementById('remove-all-items').addEventListener("click", function(){
+buttons.document.getElementById('remove-all-items').addEventListener("click", function(){
 
 });
 // Update Function //
-// function updatePage(){
-//     const values = []
-//     let updateThis = window.localStorage.getItem('products');
-// };
+function updatePage() {
+    let values = [], keys = Object.keys(localStorage), i = keys.length;
+    
+        while(i--) { values.push(localStorage.getItem(keys[1]) );
+        }
+        document.getElementById('localized-storage').textContent = values;
+}
